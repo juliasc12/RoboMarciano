@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imagemView"
+        android:layout_width="wrap_content"
+        android:layout_height="262dp"
+        android:gravity="center"
+        android:src="@drawable/marciano" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagemView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:gravity="center"
+        android:text="Olá, eu sou Robô Marciano.\n Você pode me perguntar qualquer coisa.\n Digite a sua mensagem abaixo:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/perguntaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:hint="Olá, Marciano"
+        android:gravity="center" />
+
+
+    <Button
+        android:id="@+id/enviarButton"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/perguntaEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="#FF4081"
+        android:text="Enviar"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
